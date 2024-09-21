@@ -85,6 +85,14 @@ font-size: 24px;
     font-weight: 700;
     font-size: 18px;
 }
+.collab{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+.collabmail{
+color: white;
+}
 .text{
     
     color: white;
@@ -175,6 +183,9 @@ font-size: 24px;
     gap: 2px;
 }
 .convenermail{
+    font-size: 12px;
+}
+.collabmail{
     font-size: 12px;
 }
     .logoimg{

@@ -10,6 +10,7 @@ import NotFound from './components/LandingPages/NotFound/NotFound';
 // import { Carousel } from 'react-responsive-carousel';
 import ShowTable from './components/LandingPages/UserData/ShowTable';
 import ShowallTable from './components/LandingPages/UserData/ShowallTable';
+import Contact from './components/LandingPages/Contact/Contact.js';
 // import { AllGameFixtures } from './components/LandingPages/UserData/AllGameFixtures';
 
 const LandingPages = React.lazy(() =>
@@ -77,9 +78,9 @@ const EventsEdit = React.lazy(() =>
 const HomePage = React.lazy(() =>
   import('./components/LandingPages/Home/HomePage/Home')
 );
-const Footer1 = React.lazy(() =>
-  import('./components/LandingPages/Contact/Contact.js')
-);
+// const Footer1 = React.lazy(() =>
+//   import('./components/LandingPages/Contact/Contact.js')
+// );
 const Matches = React.lazy(() =>
   import('./components/LandingPages/matches/matches')
 );
@@ -107,8 +108,7 @@ function App() {
           path="/"
           element={
             <Suspense fallback={<Preloader />}>
-              <LandingPages />{' '} 
-              <Footer />
+              <LandingPages />{' '}
             </Suspense>
           }
         >
@@ -117,6 +117,7 @@ function App() {
             element={
               <Suspense fallback={<Spinner />}>
                 <HomePage />
+                <Footer />
               </Suspense>
             }
           />
@@ -196,6 +197,7 @@ function App() {
             element={
               <Suspense fallback={<Preloader />}>
                 <Espardha />
+                <Footer/>
               </Suspense>
             }
           />
@@ -204,6 +206,7 @@ function App() {
             element={
               <Suspense fallback={<Preloader />}>
                 <Events />
+                <Footer/>
               </Suspense>
             }
           />
@@ -228,6 +231,7 @@ function App() {
             element={
               <Suspense fallback={<Preloader />}>
                 <Matches />
+                <Footer />
               </Suspense>
             }
           />
@@ -244,6 +248,7 @@ function App() {
             element={
               <Suspense fallback={<Preloader />}>
                 <Sponsors />
+                <Footer />
               </Suspense>
             }
           />
@@ -267,7 +272,8 @@ function App() {
             path="contactus"
             element={
               <Suspense fallback={<Preloader />}>
-
+                <Contact />
+                <Footer />
               </Suspense>
             }
           />
@@ -278,6 +284,7 @@ function App() {
           element={
             <Suspense fallback={<Preloader />}>
               <Admin />
+              <Footer />
             </Suspense>
           }
         />
@@ -312,6 +319,7 @@ function App() {
           element={
             <Suspense fallback={<Preloader />}>
               <DashBoard />
+              <Footer/>
             </Suspense>
           }
         >

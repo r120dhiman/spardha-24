@@ -50,6 +50,8 @@ const footer = () => {
               <h4 className={`${css.convener}`}> Convener</h4>
               <p>Sarthak Gupta</p>
               <p className={`${css.convenermail}`}>convener.spardha@itbhu.ac.in</p></div>
+              <h4  className={` ${css.collab}`}> Collaboration</h4>
+              <p className={`${css.collabmail}`}>marketing.spardha@itbhu.ac.in</p>
             </div>
             <div className={`${css.followus}`}>
               <h2 className={`${css.bluetext} ${css.gaping}`}> Follow Us</h2>
