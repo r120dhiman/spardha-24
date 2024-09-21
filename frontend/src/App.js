@@ -107,7 +107,8 @@ function App() {
           path="/"
           element={
             <Suspense fallback={<Preloader />}>
-              <LandingPages />{' '}
+              <LandingPages />{' '} 
+              <Footer />
             </Suspense>
           }
         >
@@ -266,7 +267,7 @@ function App() {
             path="contactus"
             element={
               <Suspense fallback={<Preloader />}>
-                <Footer1 />
+
               </Suspense>
             }
           />
@@ -365,7 +366,7 @@ function App() {
           />
         </Route>
       </Routes>
-      <Footer />
+
     </>
   );
 }
