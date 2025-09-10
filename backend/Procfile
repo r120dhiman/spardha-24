@@ -1,2 +1,2 @@
-release: sh -c 'cd ./Spardha/ && python manage.py migrate'
-web: gunicorn --pythonpath Spardha Spardha.wsgi
+release: python manage.py migrate
+web: gunicorn Spardha.wsgi --bind 0.0.0.0:$PORT
