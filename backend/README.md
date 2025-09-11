@@ -22,7 +22,7 @@ python -m venv venv
 Linux:
 ```bash
 source venv/bin/activate
-```
+``` 
 Windows:
 ```cmd
 ./venv/Scripts/activate
