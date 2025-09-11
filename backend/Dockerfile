@@ -28,7 +28,7 @@
 # # CMD python Spardha/manage.py runserver
 
 
-FROM python:3.8
+FROM python:3.12.6
 
 # Set working directory
 WORKDIR /app
