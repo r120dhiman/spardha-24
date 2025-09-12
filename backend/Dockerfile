@@ -52,4 +52,4 @@ COPY . /app/
 RUN python Spardha/manage.py collectstatic --noinput
 
 # Run with Gunicorn (correct project name from README)
-CMD gunicorn Spardha.wsgi:application --bind 0.0.0.0:$PORT
+CMD ["gunicorn", "backend.Spardha.wsgi:application", "--bind", "0.0.0.0:$PORT"]
